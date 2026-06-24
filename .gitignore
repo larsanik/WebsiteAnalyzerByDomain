@@ -1,0 +1,30 @@
+### Python ###
+# Байт-код (кэш компиляции Python)
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Виртуальные окружения
+.venv/
+venv/
+ENV/
+env/
+
+### Poetry ###
+# Саму утилиту скрывать не нужно, но если вы используете локальный кэш:
+.poetry/
+# ВАЖНО: файл poetry.lock НЕЛЬЗЯ добавлять в .gitignore. Он должен быть в Git!
+
+### PyCharm (JetBrains) ###
+# Скрываем настройки IDE, кроме конфигураций запуска (если они нужны команде)
+.idea/
+*.iws
+
+### Системные файлы и Секреты ###
+.DS_Store
+Thumbs.db
+.env
+.env.local
